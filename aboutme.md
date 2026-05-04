@@ -1,16 +1,32 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: 关于我
+subtitle: A little more about Chen Yuliang
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+## 👋 我是谁
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+我叫**陈宇梁**，2025 年考入中国科学技术大学少年班学院，进入**华罗庚数学英才班**学习。
+华罗庚先生是中国现代数学的奠基人之一，在他的名字所命名的班级里学习，对我而言既是荣誉，也是一份持续提醒自己保持谦逊与勤奋的责任。
 
-What else do you need?
+## 📐 我喜欢什么
 
-### My story
+- **纯数学**：尤其偏爱代数与分析中那些能用一行简洁式子讲清楚一个深刻事实的瞬间
+- **形式化证明**：我相信「让计算机检验数学」会改变未来数学家的工作方式，目前主要在折腾 [Lean 4](https://leanprover.github.io/)
+- **机器学习**：尝试理解「为什么这些方法 work」，而不只是把它们当成黑箱
+- **算法竞赛**：高中时代写过不少 OI 题目，至今仍享受写一段干净的代码解决一个具体问题的感觉
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+## 🧭 一些经历
+
+- 高中阶段获得**全国高中数学联赛银牌**和**NOIP 广东省一等奖**——前者让我决定走上数学这条路，后者让我相信代码会是数学家的得力工具
+- 2026 年起，跟随数学学院孙天阳学长在校内组织 **Lean 形式化讨论班**，担任助教，把自己学到的东西讲给同学们听是检验是否真懂的最好方式
+- 2026 年暑假，我将参加剑桥大学的在线暑期研究项目，使用机器学习和时间序列模型研究足球比赛预测——一个把统计学和体育这两个我都喜欢的事情结合起来的题目
+- 2026 年春，再次获得**全国大学生数学竞赛安徽赛区一等奖**
+
+## 📮 联系方式
+
+如果你想和我交流数学、Lean、机器学习，或者只是想打个招呼，欢迎给我发邮件：
+
+📧 **cyl2500@mail.ustc.edu.cn**
+
+也可以在 [GitHub](https://github.com/cccyyylll888) 上找到我。
