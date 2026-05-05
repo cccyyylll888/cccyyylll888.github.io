@@ -22,6 +22,7 @@ use-site-title: false
 **Lean 形式化证明讨论班**　*助教*　·　2026.4 - 至今
 - 在数学学院研究生孙天阳学长的带领下组织 Lean 语言形式化讨论班，担任助教
 - 学习用依赖类型论将经典数学定理形式化，并协助同学解决 Lean 证明中的常见问题
+- 讨论班讲义、Beamer 源码与录像链接：[github.com/cccyyylll888/Lean4-group](https://github.com/cccyyylll888/Lean4-group)
 
 **机器学习与时间序列模型在足球比赛预测中的应用**　·　计划 2026.7 - 2026.8
 - 剑桥大学在线暑期研究项目（已申请）
