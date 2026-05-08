@@ -3,9 +3,9 @@ layout: page
 title: About Me
 subtitle: A little more about Chen Yuliang
 permalink: /en/aboutme/
+before-content:
+  - lang-switcher.html
 ---
-
-> 🌐 [中文](/aboutme) ｜ **English**
 
 ## 👋 Who I Am
 

@@ -2,9 +2,9 @@
 layout: page
 title: 关于我
 subtitle: A little more about Chen Yuliang
+before-content:
+  - lang-switcher.html
 ---
-
-> 🌐 **中文** ｜ [English](/en/aboutme/)
 
 ## 👋 我是谁
 

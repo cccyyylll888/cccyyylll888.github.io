@@ -1,0 +1,50 @@
+{%- assign url = page.url -%}
+{%- if url contains '/fr/' -%}
+  {%- assign current = 'fr' -%}
+  {%- assign current_label = 'Français' -%}
+{%- elsif url contains '/en/' -%}
+  {%- assign current = 'en' -%}
+  {%- assign current_label = 'English' -%}
+{%- else -%}
+  {%- assign current = 'zh' -%}
+  {%- assign current_label = '中文' -%}
+{%- endif -%}
+
+{%- comment -%}
+  Map a 'zh-aboutme', 'en-aboutme', 'fr-aboutme' or root style URL onto the
+  three sibling URLs in the other two languages, so each entry in the dropdown
+  links to the equivalent page (not just the language home).
+{%- endcomment -%}
+{%- if url contains 'aboutme' -%}
+  {%- assign zh_url = '/aboutme' -%}
+  {%- assign en_url = '/en/aboutme/' -%}
+  {%- assign fr_url = '/fr/aboutme/' -%}
+{%- else -%}
+  {%- assign zh_url = '/' -%}
+  {%- assign en_url = '/en/' -%}
+  {%- assign fr_url = '/fr/' -%}
+{%- endif -%}
+
+<style>
+  .lang-switcher { display: inline-block; position: relative; margin: 0 0 1.2em 0; font-size: 0.9em; }
+  .lang-switcher summary { cursor: pointer; user-select: none; display: inline-block; padding: 0.35em 0.85em; border: 1px solid #ddd; border-radius: 4px; background: #f8f8f8; color: #404040; list-style: none; }
+  .lang-switcher summary::-webkit-details-marker { display: none; }
+  .lang-switcher summary::after { content: " ▾"; font-size: 0.8em; color: #888; margin-left: 0.3em; }
+  .lang-switcher[open] summary::after { content: " ▴"; }
+  .lang-switcher summary:hover { background: #eef4fa; border-color: #0066CC; }
+  .lang-switcher .lang-list { position: absolute; top: calc(100% + 4px); left: 0; margin: 0; padding: 4px 0; list-style: none; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); min-width: 9em; z-index: 10; }
+  .lang-switcher .lang-list li { margin: 0; padding: 0; }
+  .lang-switcher .lang-list a { display: block; padding: 0.4em 1em; text-decoration: none; color: #404040; }
+  .lang-switcher .lang-list a:hover { background: #f0f0f0; color: #0066CC; }
+  .lang-switcher .lang-list a.is-current { color: #0066CC; font-weight: bold; cursor: default; }
+  .lang-switcher .lang-list a.is-current:hover { background: transparent; }
+</style>
+
+<details class="lang-switcher">
+  <summary>🌐 {{ current_label }}</summary>
+  <ul class="lang-list">
+    <li><a href="{{ zh_url | relative_url }}"{% if current == 'zh' %} class="is-current"{% endif %}>中文</a></li>
+    <li><a href="{{ en_url | relative_url }}"{% if current == 'en' %} class="is-current"{% endif %}>English</a></li>
+    <li><a href="{{ fr_url | relative_url }}"{% if current == 'fr' %} class="is-current"{% endif %}>Français</a></li>
+  </ul>
+</details>

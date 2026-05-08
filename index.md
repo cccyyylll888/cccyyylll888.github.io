@@ -3,9 +3,9 @@ layout: page
 title: 陈宇梁
 subtitle: 中国科学技术大学 · 少年班学院 · 华罗庚数学英才班 2025 级
 use-site-title: false
+before-content:
+  - lang-switcher.html
 ---
-
-> 🌐 **中文** ｜ [English](/en/)
 
 你好，欢迎来到我的个人主页。
 

@@ -4,9 +4,9 @@ title: Chen Yuliang
 subtitle: USTC · School of the Gifted Young · Hua Luogeng Class for Mathematical Talents · Class of 2025
 permalink: /en/
 use-site-title: false
+before-content:
+  - lang-switcher.html
 ---
-
-> 🌐 [中文](/) ｜ **English**
 
 Hi, welcome to my homepage.
 
