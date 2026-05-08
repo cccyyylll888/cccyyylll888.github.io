@@ -1,17 +1,23 @@
 {%- comment -%}
   Pio 小恐龙吉祥物 (装饰用)
-  Source: https://github.com/Dreamer-Paul/Pio (MIT)
-  从 jsdelivr CDN 加载, 不打包资源到本仓库.
+  Source: https://github.com/Dreamer-Paul/Pio (MIT, 内部用 Live2D 渲染)
+  从 jsdelivr CDN 加载 css/js/模型, 不打包资源到本仓库.
   通过 _config.yml 的 mascot: true/false 控制启用.
 {%- endcomment -%}
 {% if site.mascot %}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@latest/dist/Pio.min.css">
-  <div class="Pio"></div>
-  <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@latest/dist/Pio.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@master/static/pio.css">
+  <div class="pio-container">
+    <div class="pio-action"></div>
+    <canvas id="pio" width="280" height="250"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@master/static/l2d.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@master/static/pio.js"></script>
   <script>
-    Pio({
+    new Paul_Pio({
       mode: "fixed",
       hidden: false,
+      tips: true,
+      model: ["https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@master/models/pio/model.json"],
       content: {
         welcome: [
           "欢迎来到陈宇梁的主页～",
@@ -20,10 +26,9 @@
           "找点感兴趣的东西看看吧"
         ],
         home: "回主页看看？",
-        theme: "想换个颜色吗？",
+        skin: ["想换个皮肤吗？", "新装上线～"],
         close: "下次再见～"
-      },
-      night: "20-7"
+      }
     });
   </script>
 {% endif %}
