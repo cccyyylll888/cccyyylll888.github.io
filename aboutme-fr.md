@@ -3,13 +3,11 @@ layout: page
 title: À propos
 subtitle: Un peu plus sur Chen Yuliang
 permalink: /fr/aboutme/
-before-content:
-  - lang-switcher.html
 ---
 
 ## 👋 Qui suis-je
 
-Je m'appelle **Chen Yuliang (陈宇梁)**. En 2025, j'ai été admis à l'[Université des sciences et technologies de Chine](https://en.ustc.edu.cn/) et j'ai rejoint la **Classe Hua Luogeng pour les talents en mathématiques** au sein de l'École des jeunes surdoués.
+Je m'appelle **Chen Yuliang**. En 2025, j'ai été admis à l'[Université des sciences et technologies de Chine](https://en.ustc.edu.cn/) et j'ai rejoint la **Classe Hua Luogeng pour les talents en mathématiques** au sein de l'École des jeunes surdoués.
 Hua Luogeng fut l'un des fondateurs des mathématiques chinoises modernes ; étudier dans une classe qui porte son nom est à la fois un honneur et un rappel constant de rester humble et travailleur.
 
 ## 📐 Ce que j'aime

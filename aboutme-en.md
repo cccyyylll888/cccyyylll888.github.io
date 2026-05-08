@@ -3,13 +3,11 @@ layout: page
 title: About Me
 subtitle: A little more about Chen Yuliang
 permalink: /en/aboutme/
-before-content:
-  - lang-switcher.html
 ---
 
 ## 👋 Who I Am
 
-My name is **Chen Yuliang (陈宇梁)**. In 2025 I was admitted to the [University of Science and Technology of China](https://en.ustc.edu.cn/) and joined the **Hua Luogeng Class for Mathematical Talents** at the School of the Gifted Young.
+My name is **Chen Yuliang**. In 2025 I was admitted to the [University of Science and Technology of China](https://en.ustc.edu.cn/) and joined the **Hua Luogeng Class for Mathematical Talents** at the School of the Gifted Young.
 Hua Luogeng was one of the founders of modern Chinese mathematics; being in a class that bears his name is both an honor and a constant reminder to stay humble and work hard.
 
 ## 📐 What I Like

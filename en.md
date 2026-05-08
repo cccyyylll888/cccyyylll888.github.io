@@ -4,13 +4,11 @@ title: Chen Yuliang
 subtitle: USTC · School of the Gifted Young · Hua Luogeng Class for Mathematical Talents · Class of 2025
 permalink: /en/
 use-site-title: false
-before-content:
-  - lang-switcher.html
 ---
 
 Hi, welcome to my homepage.
 
-I am **Chen Yuliang (陈宇梁)**, an undergraduate at the [University of Science and Technology of China](https://en.ustc.edu.cn/) (USTC), enrolled in 2025 in the **Hua Luogeng Class for Mathematical Talents** at the School of the Gifted Young. I'm passionate about **pure mathematics**, **formal proof verification**, and **machine learning**, and I'm currently learning how to write down mathematical theorems for a computer to check — line by line — using [Lean](https://leanprover.github.io/).
+I am **Chen Yuliang**, an undergraduate at the [University of Science and Technology of China](https://en.ustc.edu.cn/) (USTC), enrolled in 2025 in the **Hua Luogeng Class for Mathematical Talents** at the School of the Gifted Young. I'm passionate about **pure mathematics**, **formal proof verification**, and **machine learning**, and I'm currently learning how to write down mathematical theorems for a computer to check — line by line — using [Lean](https://leanprover.github.io/).
 
 I hope to one day do something interesting at the intersection of mathematics and computation.
 

@@ -4,13 +4,11 @@ title: Chen Yuliang
 subtitle: USTC · École des jeunes surdoués · Classe Hua Luogeng pour les talents en mathématiques · Promotion 2025
 permalink: /fr/
 use-site-title: false
-before-content:
-  - lang-switcher.html
 ---
 
 Bonjour, et bienvenue sur ma page personnelle.
 
-Je m'appelle **Chen Yuliang (陈宇梁)**, étudiant en licence à l'[Université des sciences et technologies de Chine](https://en.ustc.edu.cn/) (USTC), admis en 2025 dans la **Classe Hua Luogeng pour les talents en mathématiques** au sein de l'École des jeunes surdoués. Je m'intéresse aux **mathématiques pures**, à la **vérification formelle de preuves** et à l'**apprentissage automatique**, et j'apprends actuellement à écrire des théorèmes ligne par ligne pour qu'un ordinateur puisse les vérifier, à l'aide de [Lean](https://leanprover.github.io/).
+Je m'appelle **Chen Yuliang**, étudiant en licence à l'[Université des sciences et technologies de Chine](https://en.ustc.edu.cn/) (USTC), admis en 2025 dans la **Classe Hua Luogeng pour les talents en mathématiques** au sein de l'École des jeunes surdoués. Je m'intéresse aux **mathématiques pures**, à la **vérification formelle de preuves** et à l'**apprentissage automatique**, et j'apprends actuellement à écrire des théorèmes ligne par ligne pour qu'un ordinateur puisse les vérifier, à l'aide de [Lean](https://leanprover.github.io/).
 
 J'espère un jour faire quelque chose d'intéressant à l'intersection des mathématiques et de l'informatique.
 

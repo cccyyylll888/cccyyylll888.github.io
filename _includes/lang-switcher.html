@@ -11,9 +11,8 @@
 {%- endif -%}
 
 {%- comment -%}
-  Map a 'zh-aboutme', 'en-aboutme', 'fr-aboutme' or root style URL onto the
-  three sibling URLs in the other two languages, so each entry in the dropdown
-  links to the equivalent page (not just the language home).
+  Map sibling URLs across the three languages so each entry in the dropdown
+  links to the equivalent page rather than the language home.
 {%- endcomment -%}
 {%- if url contains 'aboutme' -%}
   {%- assign zh_url = '/aboutme' -%}
@@ -26,25 +25,69 @@
 {%- endif -%}
 
 <style>
-  .lang-switcher { display: inline-block; position: relative; margin: 0 0 1.2em 0; font-size: 0.9em; }
-  .lang-switcher summary { cursor: pointer; user-select: none; display: inline-block; padding: 0.35em 0.85em; border: 1px solid #ddd; border-radius: 4px; background: #f8f8f8; color: #404040; list-style: none; }
-  .lang-switcher summary::-webkit-details-marker { display: none; }
-  .lang-switcher summary::after { content: " ▾"; font-size: 0.8em; color: #888; margin-left: 0.3em; }
-  .lang-switcher[open] summary::after { content: " ▴"; }
-  .lang-switcher summary:hover { background: #eef4fa; border-color: #0066CC; }
-  .lang-switcher .lang-list { position: absolute; top: calc(100% + 4px); left: 0; margin: 0; padding: 4px 0; list-style: none; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); min-width: 9em; z-index: 10; }
-  .lang-switcher .lang-list li { margin: 0; padding: 0; }
-  .lang-switcher .lang-list a { display: block; padding: 0.4em 1em; text-decoration: none; color: #404040; }
-  .lang-switcher .lang-list a:hover { background: #f0f0f0; color: #0066CC; }
-  .lang-switcher .lang-list a.is-current { color: #0066CC; font-weight: bold; cursor: default; }
-  .lang-switcher .lang-list a.is-current:hover { background: transparent; }
+  .lang-switcher-nav { list-style: none; position: relative; }
+  .lang-switcher-nav .lang-switcher { margin: 0; }
+  .lang-switcher-nav .lang-switcher summary {
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    display: inline-block;
+  }
+  .lang-switcher-nav .lang-switcher summary::-webkit-details-marker { display: none; }
+  .lang-switcher-nav .lang-switcher summary::after { content: " ▾"; font-size: 0.75em; opacity: 0.7; margin-left: 0.25em; }
+  .lang-switcher-nav .lang-switcher[open] summary::after { content: " ▴"; }
+  .lang-switcher-nav .lang-list {
+    position: absolute;
+    top: calc(100% - 4px);
+    right: 0;
+    left: auto;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    min-width: 9em;
+    z-index: 1100;
+  }
+  .lang-switcher-nav .lang-list li { margin: 0; padding: 0; }
+  .lang-switcher-nav .lang-list a {
+    display: block;
+    padding: 0.45em 1em;
+    text-decoration: none;
+    color: #404040;
+    font-size: 0.95em;
+  }
+  .lang-switcher-nav .lang-list a:hover { background: #f0f0f0; color: #0066CC; }
+  .lang-switcher-nav .lang-list a.is-current {
+    color: #0066CC;
+    font-weight: bold;
+    cursor: default;
+    background: #fafafa;
+  }
+  .lang-switcher-nav .lang-list a.is-current:hover { background: #fafafa; }
+
+  /* On mobile / collapsed navbar, render the dropdown inline instead of floating */
+  @media (max-width: 1199.98px) {
+    .lang-switcher-nav .lang-list {
+      position: static;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+      padding-left: 0;
+    }
+    .lang-switcher-nav .lang-list a { padding-left: 2em; }
+  }
 </style>
 
-<details class="lang-switcher">
-  <summary>🌐 {{ current_label }}</summary>
-  <ul class="lang-list">
-    <li><a href="{{ zh_url | relative_url }}"{% if current == 'zh' %} class="is-current"{% endif %}>中文</a></li>
-    <li><a href="{{ en_url | relative_url }}"{% if current == 'en' %} class="is-current"{% endif %}>English</a></li>
-    <li><a href="{{ fr_url | relative_url }}"{% if current == 'fr' %} class="is-current"{% endif %}>Français</a></li>
-  </ul>
-</details>
+<li class="nav-item lang-switcher-nav">
+  <details class="lang-switcher">
+    <summary class="nav-link" role="button" aria-haspopup="true">🌐 {{ current_label }}</summary>
+    <ul class="lang-list">
+      <li><a href="{{ zh_url | relative_url }}"{% if current == 'zh' %} class="is-current"{% endif %}>中文</a></li>
+      <li><a href="{{ en_url | relative_url }}"{% if current == 'en' %} class="is-current"{% endif %}>English</a></li>
+      <li><a href="{{ fr_url | relative_url }}"{% if current == 'fr' %} class="is-current"{% endif %}>Français</a></li>
+    </ul>
+  </details>
+</li>
