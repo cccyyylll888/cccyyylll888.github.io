@@ -1,0 +1,29 @@
+{%- comment -%}
+  Pio 小恐龙吉祥物 (装饰用)
+  Source: https://github.com/Dreamer-Paul/Pio (MIT)
+  从 jsdelivr CDN 加载, 不打包资源到本仓库.
+  通过 _config.yml 的 mascot: true/false 控制启用.
+{%- endcomment -%}
+{% if site.mascot %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@latest/dist/Pio.min.css">
+  <div class="Pio"></div>
+  <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@latest/dist/Pio.min.js"></script>
+  <script>
+    Pio({
+      mode: "fixed",
+      hidden: false,
+      content: {
+        welcome: [
+          "欢迎来到陈宇梁的主页～",
+          "今天又在敲 Lean 吗？",
+          "数学其实很美，对吧？",
+          "找点感兴趣的东西看看吧"
+        ],
+        home: "回主页看看？",
+        theme: "想换个颜色吗？",
+        close: "下次再见～"
+      },
+      night: "20-7"
+    });
+  </script>
+{% endif %}
