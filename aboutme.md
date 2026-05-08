@@ -4,6 +4,8 @@ title: 关于我
 subtitle: A little more about Chen Yuliang
 ---
 
+> 🌐 **中文** ｜ [English](/en/aboutme/)
+
 ## 👋 我是谁
 
 我叫**陈宇梁**，2025 年考入中国科学技术大学少年班学院，进入**华罗庚数学英才班**学习。
