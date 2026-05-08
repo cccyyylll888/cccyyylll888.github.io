@@ -105,7 +105,7 @@ keywords: "陈宇梁,Chen Yuliang,USTC,中国科学技术大学,华罗庚数学�
 ######################################
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
-page-col: "#D4EAF5"
+page-col: "#FDF6E3"
 text-col: "#404040"
 link-col: "#0066CC"
 hover-col: "#003D7A"
