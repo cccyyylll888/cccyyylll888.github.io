@@ -22,16 +22,19 @@ author: 陈宇梁 (Chen Yuliang)
 # Chinese (default)
 navbar-links:
   关于我: "aboutme"
+  随笔: "blog"
   GitHub: "https://github.com/cccyyylll888"
 
 # English (used when page URL contains /en/)
 navbar-links-en:
   About Me: "/en/aboutme/"
+  Notes: "/blog/"
   GitHub: "https://github.com/cccyyylll888"
 
 # French (used when page URL contains /fr/)
 navbar-links-fr:
   À propos: "/fr/aboutme/"
+  Notes: "/blog/"
   GitHub: "https://github.com/cccyyylll888"
 
 ################
@@ -137,6 +140,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 kramdown:
   input: GFM
@@ -149,8 +153,9 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
+      comments: false
       social-share: true
+      mathjax: true
   -
     scope:
       path: ""
