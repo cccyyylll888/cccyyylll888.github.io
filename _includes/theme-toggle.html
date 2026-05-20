@@ -1,0 +1,22 @@
+{%- assign url = page.url -%}
+{%- if url contains '/fr/' -%}
+  {%- assign theme_label = 'Thème' -%}
+  {%- assign theme_to_light = 'Passer au thème clair' -%}
+  {%- assign theme_to_dark = 'Passer au thème sombre' -%}
+{%- elsif url contains '/en/' -%}
+  {%- assign theme_label = 'Theme' -%}
+  {%- assign theme_to_light = 'Switch to light theme' -%}
+  {%- assign theme_to_dark = 'Switch to dark theme' -%}
+{%- else -%}
+  {%- assign theme_label = '主题' -%}
+  {%- assign theme_to_light = '切换到亮色主题' -%}
+  {%- assign theme_to_dark = '切换到暗色主题' -%}
+{%- endif -%}
+
+<li class="nav-item theme-toggle-nav">
+  <button class="nav-link theme-toggle" id="theme-toggle" type="button" aria-label="{{ theme_label }}" title="{{ theme_label }}" data-light-title="{{ theme_to_light }}" data-dark-title="{{ theme_to_dark }}">
+    <span class="theme-toggle-icon theme-toggle-icon-light fa fa-sun" aria-hidden="true"></span>
+    <span class="theme-toggle-icon theme-toggle-icon-dark fa fa-moon" aria-hidden="true"></span>
+    <span class="theme-toggle-text">{{ theme_label }}</span>
+  </button>
+</li>

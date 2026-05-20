@@ -6,6 +6,7 @@ let BeautifulJekyllJS = {
   numImgs : null,
 
   init : function() {
+    BeautifulJekyllJS.initThemeToggle();
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
     // Shorten the navbar after scrolling a little bit down
@@ -29,6 +30,45 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initImgs();
 
     BeautifulJekyllJS.initSearch();
+  },
+
+  initThemeToggle : function() {
+    const storageKey = "beautiful-jekyll-theme";
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    const lightThemeColor = themeColor ? themeColor.getAttribute("content") : "#0066CC";
+
+    const getTheme = function() {
+      return document.documentElement.getAttribute("data-theme") || "light";
+    };
+
+    const setTheme = function(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      if (themeColor) {
+        themeColor.setAttribute("content", theme === "dark" ? "#17232E" : lightThemeColor);
+      }
+      if (themeToggle) {
+        const isDark = theme === "dark";
+        const title = isDark ? themeToggle.dataset.lightTitle : themeToggle.dataset.darkTitle;
+        themeToggle.setAttribute("aria-label", title);
+        themeToggle.setAttribute("title", title);
+      }
+      setTimeout(BeautifulJekyllJS.initNavbar, 10);
+    };
+
+    setTheme(getTheme());
+
+    if (!themeToggle) {
+      return;
+    }
+
+    themeToggle.addEventListener("click", function() {
+      const nextTheme = getTheme() === "dark" ? "light" : "dark";
+      try {
+        localStorage.setItem(storageKey, nextTheme);
+      } catch (e) {}
+      setTheme(nextTheme);
+    });
   },
 
   initNavbar : function() {

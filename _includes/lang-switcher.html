@@ -44,8 +44,8 @@
     margin: 0;
     padding: 4px 0;
     list-style: none;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: var(--navbar-col);
+    border: 1px solid var(--navbar-border-col);
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.10);
     min-width: 9em;
@@ -56,17 +56,17 @@
     display: block;
     padding: 0.45em 1em;
     text-decoration: none;
-    color: #404040;
+    color: var(--navbar-text-col);
     font-size: 0.95em;
   }
-  .lang-switcher-nav .lang-list a:hover { background: #f0f0f0; color: #0066CC; }
+  .lang-switcher-nav .lang-list a:hover { background: color-mix(in srgb, var(--navbar-col), var(--hover-col) 12%); color: var(--hover-col); }
   .lang-switcher-nav .lang-list a.is-current {
-    color: #0066CC;
+    color: var(--hover-col);
     font-weight: bold;
     cursor: default;
-    background: #fafafa;
+    background: color-mix(in srgb, var(--navbar-col), var(--hover-col) 8%);
   }
-  .lang-switcher-nav .lang-list a.is-current:hover { background: #fafafa; }
+  .lang-switcher-nav .lang-list a.is-current:hover { background: color-mix(in srgb, var(--navbar-col), var(--hover-col) 8%); }
 
   /* On mobile / collapsed navbar, render the dropdown inline instead of floating */
   @media (max-width: 1199.98px) {
