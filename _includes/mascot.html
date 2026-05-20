@@ -5,6 +5,35 @@
   通过 _config.yml 的 mascot: true/false 控制启用.
 {%- endcomment -%}
 {% if site.mascot %}
+  {%- assign url = page.url -%}
+  {%- if url contains '/fr/' -%}
+    {%- assign pio_welcome_1 = "Bienvenue sur la page de Chen Yuliang." -%}
+    {%- assign pio_welcome_2 = "Encore en train d'écrire du Lean aujourd'hui ?" -%}
+    {%- assign pio_welcome_3 = "Les mathématiques sont belles, n'est-ce pas ?" -%}
+    {%- assign pio_welcome_4 = "Cherchez quelque chose qui vous intéresse." -%}
+    {%- assign pio_home = "Retourner à l'accueil ?" -%}
+    {%- assign pio_skin_1 = "Voulez-vous voir un autre chat ?" -%}
+    {%- assign pio_skin_2 = "C'est fait." -%}
+    {%- assign pio_close = "À la prochaine." -%}
+  {%- elsif url contains '/en/' -%}
+    {%- assign pio_welcome_1 = "Welcome to Chen Yuliang's homepage." -%}
+    {%- assign pio_welcome_2 = "Writing Lean again today?" -%}
+    {%- assign pio_welcome_3 = "Mathematics is beautiful, isn't it?" -%}
+    {%- assign pio_welcome_4 = "Take a look around and find something interesting." -%}
+    {%- assign pio_home = "Back to the homepage?" -%}
+    {%- assign pio_skin_1 = "Want to see another cat?" -%}
+    {%- assign pio_skin_2 = "All set." -%}
+    {%- assign pio_close = "See you next time." -%}
+  {%- else -%}
+    {%- assign pio_welcome_1 = "欢迎来到陈宇梁的主页～" -%}
+    {%- assign pio_welcome_2 = "今天又在敲 Lean 吗？" -%}
+    {%- assign pio_welcome_3 = "数学其实很美，对吧？" -%}
+    {%- assign pio_welcome_4 = "找点感兴趣的东西看看吧" -%}
+    {%- assign pio_home = "回主页看看？" -%}
+    {%- assign pio_skin_1 = "想看看另一只猫咪吗？" -%}
+    {%- assign pio_skin_2 = "换好啦～" -%}
+    {%- assign pio_close = "下次再见～" -%}
+  {%- endif -%}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@master/static/pio.css">
   <div class="pio-container">
     <div class="pio-action"></div>
@@ -23,14 +52,14 @@
       ],
       content: {
         welcome: [
-          "欢迎来到陈宇梁的主页～",
-          "今天又在敲 Lean 吗？",
-          "数学其实很美，对吧？",
-          "找点感兴趣的东西看看吧"
+          {{ pio_welcome_1 | jsonify }},
+          {{ pio_welcome_2 | jsonify }},
+          {{ pio_welcome_3 | jsonify }},
+          {{ pio_welcome_4 | jsonify }}
         ],
-        home: "回主页看看？",
-        skin: ["想看看另一只猫咪吗？", "换好啦～"],
-        close: "下次再见～"
+        home: {{ pio_home | jsonify }},
+        skin: [{{ pio_skin_1 | jsonify }}, {{ pio_skin_2 | jsonify }}],
+        close: {{ pio_close | jsonify }}
       }
     });
   </script>
