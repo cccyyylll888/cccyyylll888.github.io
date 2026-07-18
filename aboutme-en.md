@@ -21,7 +21,6 @@ Hua Luogeng was one of the founders of modern Chinese mathematics; being in a cl
 
 - In high school I won a **Silver Medal** at the Chinese High School Mathematical Olympiad and a **First Prize** (Guangdong) at NOIP — the former made me decide to study mathematics; the latter convinced me that programming would be a powerful ally for a mathematician
 - Since 2026, working with Tianyang Sun (graduate student, School of Mathematical Sciences), I have helped organize an internal **Lean formalization reading group**, where I serve as a teaching assistant. Explaining what I learn to others remains the best test of whether I really understand it (notes and recordings live in the [Lean4-group repo](https://github.com/cccyyylll888/Lean4-group))
-- In summer 2026 I will join Cambridge University's online summer research programme, working on **machine learning and time series models for football match prediction** — a topic that combines statistics and sports, two things I both enjoy
 - In spring 2026 I won a **First Prize** (Anhui province) at the China Undergraduate Mathematical Contest, and went on to win a **First Prize** at the **17th China Undergraduate Mathematical Contest** national final (lower division, mathematics major)
 
 ## 📮 Contact
