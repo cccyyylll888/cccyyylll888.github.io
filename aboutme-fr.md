@@ -21,7 +21,6 @@ Hua Luogeng fut l'un des fondateurs des mathématiques chinoises modernes ; étu
 
 - Au lycée, j'ai obtenu une **médaille d'argent** aux Olympiades chinoises de mathématiques et un **premier prix** (Guangdong) aux NOIP — la première m'a décidé à étudier les mathématiques ; le second m'a convaincu que la programmation serait un précieux allié pour un mathématicien
 - Depuis 2026, en collaboration avec Tianyang Sun (doctorant à l'École des sciences mathématiques), j'ai aidé à organiser un **groupe de lecture interne sur la formalisation en Lean**, où j'occupe le rôle d'assistant d'enseignement. Expliquer ce que l'on apprend reste le meilleur test pour vérifier que l'on a vraiment compris (notes et enregistrements dans le [dépôt Lean4-group](https://github.com/cccyyylll888/Lean4-group))
-- À l'été 2026, je rejoindrai le programme d'été de recherche en ligne de l'Université de Cambridge, sur le thème de l'**apprentissage automatique et des séries temporelles pour la prédiction de matchs de football** — un sujet qui combine les statistiques et le sport, deux choses que j'apprécie
 - Au printemps 2026, j'ai obtenu un **premier prix** (province de l'Anhui) au Concours national de mathématiques pour étudiants de licence, puis un **premier prix** à la **finale nationale du 17ᵉ Concours national de mathématiques pour étudiants de licence** (division inférieure, filière mathématiques)
 
 ## 📮 Contact
